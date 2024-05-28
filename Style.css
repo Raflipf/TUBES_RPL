@@ -28,11 +28,11 @@ body {
     margin: 0 auto;
 }
 .nav-link {
-    color: white;
+    color: rgb(187, 178, 178);
     position: relative;
-    padding: 10px 40px;
-    margin: 16px;
-    border-radius: 50px;
+    padding: 13px 40px;
+    margin: 10px;
+    border-radius: 40px;
     background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.5s;
 }
