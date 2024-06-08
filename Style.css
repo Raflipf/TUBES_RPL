@@ -1,113 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+27px&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BVLGARI Hotel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/Gallery/LOGO_Remove.png"
+            alt="Hotel GW Logo"
+            style="height: 50px"
+          />
+          BVLGARI
+        </a>
+      </div>
+    </nav>
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #fff;
-}
-.navbar {
-    position: absolute;
-    width: 90%;
-    top: 30px;
-    z-index: 50;
-    background-color: transparent;
-    box-shadow: rgb(0, 0, 0);
-}
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    color: rgb(22, 22, 22);
-}
-.navbar-brand img {
-    height: 90px;
-    width: auto;
-    margin-right: 3px;
-}
-.navbar-nav {
-    margin: 0 auto;
-}
-.nav-link {
-    color: rgb(187, 178, 178);
-    position: relative;
-    padding: 13px 40px;
-    margin: 10px;
-    border-radius: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all 0.5s;
-}
-.nav-link:hover, .nav-link:focus {
-    background-color: #ce9701b3;
-}
-.nav-link::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    z-index: -1;
-    transition: width 0.3s ease, height 0.3s ease;
-}
-.nav-link:hover::after, .nav-link:focus::after {
-    width: 100%;
-    height: 100%;
-}
-.hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-.hero video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.hero .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.7);
-    font-family: "Libre Baskerville", serif;
-}
-.hero .content h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-}
-.hero .content p {
-    font-size: 1.5rem;
-}
-.section {
-    padding: 4rem 2rem;
-    background-size: cover;
-    background-position: center;
-}
+    <div class="hero" id="home">
+      <video
+        src="/Gallery/Y2meta.app-BULGARI HOTEL PARIS - THE OPENING EVENT-(1080p).mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="content">
+        <h1>Welcome to <strong>BVLGARI</strong> Hotel</h1>
+        <p>Your Perfect Getaway Destination</p>
+        <a class="login-link" href="/Login/indexlogin.html">Login</a>
+      </div>
+    </div>
 
-.full-screen-section {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    <section class="section full-screen-section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="about-us-heading">About Us</h2>
+            <p>
+              BVLGARI Hotel epitomizes luxury and sophistication, seamlessly
+              extending the elegance of the renowned Bvlgari brand into
+              hospitality. Located in iconic cities like Milan, London, Bali,
+              and Dubai, our hotels offer serene retreats amidst urban vibrancy,
+              blending modern luxury with classical Italian design. Every
+              detail, from bespoke furnishings to contemporary artworks,
+              reflects our commitment to refined comfort and style. Our
+              exceptional service, provided by dedicated staff, ensures each
+              guest experiences unforgettable moments of personalized luxury.
+            </p>
+            <p>
+              Indulge in unparalleled relaxation at the Bvlgari Spa, featuring
+              exclusive treatments and state-of-the-art facilities. Savor
+              extraordinary culinary delights at our esteemed restaurants and
+              bars, where gourmet dishes are crafted with the finest
+              ingredients. At Bvlgari Hotel, every stay is a masterpiece of
+              elegance and grace, inviting you to experience the pinnacle of
+              luxury.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="/Gallery/depan bvlgari.jpg"
+              class="img-fluid"
+              alt="About Us"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-#about {
-    background-image: url('/Gallery/clean-black-plaster.jpg');
-}
-#booking {
-    background-image: url('/Gallery/clean-black-plaster.jpg');
-} 
-#rooms {
-    background-image: url('/Gallery/solid-concrete-wall-textured-backdrop.jpg');
-}
-#services {
-    background-image: url('/Gallery/solid-concrete-wall-textured-backdrop.jpg');
-}
-#contact {
-    background-image: url('/Gallery/solid-concrete-wall-textured-backdrop.jpg');
-}
+    <div class="container mt-5">
+      <h2 class="about-us-heading">Our features</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 text-center">
+          <img
+            src="/Gallery/spa.jpeg"
+            alt="Spa"
+            class="feature-image img-fluid"
+          />
+          <h3>Spa & Wellness</h3>
+          <p>
+            Relax and rejuvenate with our world-class spa treatments and
+            wellness programs.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img
+            src="/Gallery/restaurant.jpeg"
+            alt="Restaurant"
+            class="feature-image img-fluid"
+          />
+          <h3>Gourmet Restaurant</h3>
+          <p>
+            Experience fine dining with exquisite dishes prepared by our top
+            chefs.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img
+            src="/Gallery/pool.jpeg"
+            alt="Pool"
+            class="feature-image img-fluid"
+          />
+          <h3>Infinity Pool</h3>
+          <p>
+            Enjoy a refreshing swim in our luxurious infinity pool with stunning
+            views.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4 text-center">
+          <img
+            src="/Gallery/GYM.jpeg"
+            alt="Gym"
+            class="feature-image img-fluid"
+          />
+          <h3>Fitness Center</h3>
+          <p>
+            Stay fit and active with our state-of-the-art fitness facilities.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img
+            src="/Gallery/confrence.jpeg"
+            alt="Conference Room"
+            class="feature-image img-fluid"
+          />
+          <h3>Conference Rooms</h3>
+          <p>
+            Host your business meetings and events in our well-equipped
+            conference rooms.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img
+            src="/Gallery/bar.jpeg"
+            alt="Bar"
+            class="feature-image img-fluid"
+          />
+          <h3>Lounge Bar</h3>
+          <p>
+            Unwind with a drink at our elegant lounge bar, featuring a wide
+            selection of beverages.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-white bg-dark py-4">
+      <p>&copy; 2024 BVLGARI Hotel. All rights reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
